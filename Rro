@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Routine de Féminisation</title>
+</head>
+<body>
+  <h1>Bienvenue dans ta routine de féminisation, Sarah</h1>
+  <button onclick="commencer()">Commencer</button>
+  <button onclick="pauseDouce()">Pause douce</button>
+  <button onclick="reprendreDoucement()">Reprendre doucement</button>
+  <p id="compteurPause">Jours en pause : 0</p>
+  <script>
+    let joursEnPause = 0;
+    function commencer() {
+      alert("Programme commencé !");
+    }
+    function pauseDouce() {
+      alert("Pause douce activée : prise un jour sur deux pendant 5 jours.");
+      // Implémente ici la logique de la pause douce
+    }
+    function reprendreDoucement() {
+      alert("Reprise progressive activée.");
+      // Implémente ici la logique de la reprise progressive
+    }
+    // Met à jour le compteur de jours en pause
+    document.getElementById("compteurPause").innerText = "Jours en pause : " + joursEnPause;
+  </script>
+</body>
+</html>
